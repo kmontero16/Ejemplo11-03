@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-mar-2019, 21:46:01
+    Author     : cetecom
+*/
+
+#menu{
+    background: yellow;
+    float:left;
+    /*position: absolute;*/
+    left: 0px;
+    width: 15%;
+    height: 1000px;
+}
+#head{
+    background: brown;
+    float: top;
+    height: 300px;
+}
+#contenedor{
+    background: cornflowerblue;
+    float:bottom;
+    height: 700px;
+}
