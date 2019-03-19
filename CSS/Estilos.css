@@ -8,21 +8,49 @@ and open the template in the editor.
     Author     : cetecom
 */
 /* http://es.learnlayout.com/ ayuda con posicion*/
+a.submenu{
+    padding-left: 60px;
+    display: none;
+}
+
+a:hover{
+    background: black;
+}
+#contenedor{
+    width:100%;
+}
+#head{
+    width:100%;
+    height: 80px;
+    float: left;
+    background: lightgray;
+}
+#menu{
+    width: 20%;
+    height: 500px;
+    float: left;
+    background: lightseagreen;
+}
+#contenido{
+   width: 80%;
+   height: 500px; 
+   float: left;
+   background: cornflowerblue;
+}
+/*
 #menu{
     background: yellow;
     float:left;
-    /*position: absolute;*/
+    position: absolute;
     left: 0px;
     width: 15%;
     height: 1000px;
 }
-#head{
-    background: brown;
-    float: top;
-    height: 300px;
-}
-#contenedor{
+#contenido{
     background: cornflowerblue;
     float:bottom;
     height: 700px;
 }
+*/
+
+
