@@ -26,12 +26,19 @@ $_SESSION["regVacaciones"]=$vaca;
         </div>
     </body>
     <script>
-        $("#prisolicitud").on("click",
-        function(event){
-            $("#subsolicitud").show;
-            $("#subsolicitud").css("display","block");
-        });
-        $('[data-toggle="tooltip"]').tooltip();
+        $("#prisolicitud").on( "click", function( event ) {
+            if(($("[id*=subsolicitud]").css("display")!="none")){
+                 $("[id*=subsolicitud]").css("display","none");
+            }
+            else{
+                $("[id*=subsolicitud]").show();
+                $("[id*=subsolicitud]").css("display","block");
+            }
+                
+                
+            });
+        
+        $('[data-toggle="tooltip"]').tooltip(); 
     </script>
         <?php
         // put your code here

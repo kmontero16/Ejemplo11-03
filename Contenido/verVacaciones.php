@@ -62,8 +62,20 @@ if(isset($_SESSION["aVacaciones"])){
             </div>
         </div>   
         <div id="resultado"></div>
+        <form id="formEliminar" action="../Librerias/Eliminar.php" method="post">
+            <input type="hidden" name="rut" id="rut">
+        </form>
     </body>
     <script>
+        function feliminar(id){
+           $("#rut").val(id);
+           $("#formelimina").submit();
+        }
+        $("#btneliminar").on( "click", function( event ) {
+           $.post( "../Librerias/Eliminar.php", { rut:  $("#eliminarut_jq").value() }, function( data ) {
+                $( "#resultado" ).html( data );
+            });
+        });
         $("#prisolicitud").on("click",function(event){
             if(($("[id*=subsolicitud]").css("display")!=="none")){
                  $("[id*=subsolicitud]").css("display","none");
